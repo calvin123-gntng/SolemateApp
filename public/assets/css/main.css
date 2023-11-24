@@ -1,0 +1,23 @@
+html,
+body,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu {
+        width: 80%;
+        position: fixed;
+        right: -80%;
+        top: 67px;
+        transition: all 0.3s;
+    }
+
+    .menu.show {
+        right: 0;
+    }
+}
